@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Dashboard</title>
+</head>
+<body class="h-screen bg-gray-100">
+    <div class="flex">
+        <aside class="w-64 bg-white p-5 shadow-md h-screen">
+            <h1 class="text-2xl font-bold text-blue-500 p-2">TrendBox</h1>
+            <nav class="mt-10">
+                <ul>
+                    <li class="mb-10 p-2"><a href="/index.html">Dashboard</a></li>
+                    <li class="mb-10 p-2"><a href="/addProduto.html">Adicionar Produto</a></li>
+                    <li class="mb-10 p-2"><a href="/delProduto.html">Remover Produto</a></li>
+                    <li class="mb-10 p-2"><a href="/produtos.html">Produtos</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="flex-1 p-5">
+            <h1 class="text-2xl font-bold">Dashboard</h1>
+            <div class="grid grid-cols-3 gap-4 mt-5">
+                <div class="bg-white p-5 shadow-md rounded-lg">
+                    <h3 class="text-lg font-bold">Total de Vendas</h3>
+                    <p class="text-2xl font-semibold">25,024</p>
+                </div>
+                <div class="bg-white p-5 shadow-md rounded-lg">
+                    <h3 class="text-lg font-bold">Total de Despesas</h3>
+                    <p class="text-2xl font-semibold">14,024</p>
+                </div>
+                <div class="bg-white p-5 shadow-md rounded-lg">
+                    <h3 class="text-lg font-bold">Total de Custos</h3>
+                    <p class="text-2xl font-semibold">25,024</p>
+                </div>
+            </div>
+
+            <div class="bg-white p-5 shadow-md rounded-lg mt-5">
+                <h3 class="text-lg font-bold">Gráfico de Vendas, Despesas e Custos</h3>
+                <canvas id="myChart" width="85" height="20"></canvas>
+
+
+            </div>
+
+            <table class="w-full bg-white shadow-md rounded-lg mt-3">
+                <thead>
+                    <tr class="border-b">
+                        <th class="p-3 text-left">Nome do Produto</th>
+                        <th class="p-3 text-left">Número do Produto</th>
+                        <th class="p-3 text-left">Pagamento</th>
+                        <th class="p-3 text-left">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b">
+                        <td class="p-3">Mini Drone</td>
+                        <td class="p-3">123</td>
+                        <td class="p-3">Cartão de Crédito</td>
+                        <td class="p-3 text-yellow-500">Pendente</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="p-3">Celular</td>
+                        <td class="p-3">124</td>
+                        <td class="p-3">Boleto</td>
+                        <td class="p-3 text-yellow-500">Pendente</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3">Carregador</td>
+                        <td class="p-3">125</td>
+                        <td class="p-3">Cartão de Crédito</td>
+                        <td class="p-3 text-yellow-500">Pendente</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+
+    <script src="/script/conf.js"></script>
+</body>
+</html>
