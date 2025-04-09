@@ -1,84 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Dashboard</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Dashboard</title>
 </head>
-<body class="h-screen bg-gray-100">
-    <div class="flex">
-        <aside class="w-64 bg-white p-5 shadow-md h-screen">
-            <h1 class="text-2xl font-bold text-blue-500 p-2">TrendBox</h1>
-            <nav class="mt-10">
-                <ul>
-                    <li class="mb-10 p-2"><a href="/index.html">Dashboard</a></li>
-                    <li class="mb-10 p-2"><a href="/addProduto.html">Adicionar Produto</a></li>
-                    <li class="mb-10 p-2"><a href="/delProduto.html">Remover Produto</a></li>
-                    <li class="mb-10 p-2"><a href="/produtos.html">Produtos</a></li>
-                </ul>
-            </nav>
-        </aside>
+<body class="bg-gray-100">
 
-        <main>
-            <div class="p-6">
-            <h2 class="text-xl font-bold mb-4">Lista de Produtos</h2>
-            <div class="overflow-x-auto">
-            <table class="min-w-full bg-white border border-gray-300">
-            <thead>
-                <tr>
-                <th class="px-20 py-3 border-b border-gray-300 text-left text-sm font-medium">ID</th>
-                <th class="px-20 py-3 border-b border-gray-300 text-left text-sm font-medium">Nome</th>
-                <th class="px-20 py-3 border-b border-gray-300 text-left text-sm font-medium">Preço</th>
-                <th class="px-20 py-3 border-b border-gray-300 text-left text-sm font-medium">Categoria</th>
-                <th class="px-20 py-3 border-b border-gray-300 text-left text-sm font-medium">Descrição</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                <td class="px-20 py-10 border-b border-gray-300 text-sm">1</td>
-                <td class="px-20 py-10 border-b border-gray-300 text-sm">Smartphone Samsung Galaxy S23</td>
-                <td class="px-20 py-10 border-b border-gray-300 text-sm">R$ 4.999,00</td>
-                <td class="px-20 py-10 border-b border-gray-300 text-sm">Eletrônicos</td>
-                <td class="px-20 py-10 border-b border-gray-300 text-sm">Smartphone de última geração com câmera avançada, tela AMOLED de alta resolução e bateria de longa duração.</td>
-                </tr>
-                <tr>
-                <td class="px-20 py-10 border-b border-gray-300 text-sm">2</td>
-                <td class="px-20 py-10 border-b border-gray-300 text-sm">Notebook Dell Inspiron</td>
-                <td class="px-20 py-10 border-b border-gray-300 text-sm">R$ 3.500,00</td>
-                <td class="px-20 py-10 border-b border-gray-300 text-sm">Eletrônicos</td>
-                <td class="px-20 py-10 border-b border-gray-300 text-sm">Notebook ideal para trabalho e estudos, com processador rápido, tela Full HD e design leve e portátil.</td>
-                </tr>
-                <tr>
-                <td class="px-20 py-10 border-b border-gray-300 text-sm">3</td>
-                <td class="px-20 py-10 border-b border-gray-300 text-sm">Camiseta Nike Dry-Fit</td>
-                <td class="px-20 py-10 border-b border-gray-300 text-sm">R$ 149,90</td>
-                <td class="px-20 py-10 border-b border-gray-300 text-sm">Roupas</td>
-                <td class="px-20 py-10 border-b border-gray-300 text-sm">Camiseta esportiva com tecnologia de secagem rápida, ideal para atividades físicas e conforto diário.</td>
-                </tr>
-                <tr>
-                <td class="px-20 py-10 border-b border-gray-300 text-sm">4</td>
-                <td class="px-20 py-10 border-b border-gray-300 text-sm">Relógio Apple Watch Series 8</td>
-                <td class="px-20 py-10 border-b border-gray-300 text-sm">R$ 5.299,00</td>
-                <td class="px-20 py-10 border-b border-gray-300 text-sm">Acessórios</td>
-                <td class="px-20 py-10 border-b border-gray-300 text-sm">Relógio inteligente com monitoramento de saúde, resistência à água e integração com dispositivos Apple.</td>
-                </tr>
-                <tr>
-                <td class="px-20 py-10 border-b border-gray-300 text-sm">5</td>
-                <td class="px-20 py-10 border-b border-gray-300 text-sm">Boné Adidas Classic</td>
-                <td class="px-20 py-10 border-b border-gray-300 text-sm">R$ 99,90</td>
-                <td class="px-20 py-10 border-b border-gray-300 text-sm">Acessórios</td>
-                <td class="px-20 py-10 border-b border-gray-300 text-sm">Boné casual com design clássico, ajuste confortável e material de alta qualidade.</td>
-                </tr>
-                <tr>
-                <td class="px-20 py-10 border-b border-gray-300 text-sm">6</td>
-                <td class="px-20 py-10 border-b border-gray-300 text-sm">Calça Jeans Levi's</td>
-                <td class="px-20 py-10 border-b border-gray-300 text-sm">R$ 279,90</td>
-                <td class="px-20 py-10 border-b border-gray-300 text-sm">Roupas</td>
-                <td class="px-20 py-10 border-b border-gray-300 text-sm">Calça jeans de alta qualidade e conforto, com design moderno e durabilidade garantida.</td>
-                </tr>
-            </tbody>
-            </table>
-            </div>
-            </div>
-        </main>
+  <button id="menuButton" class="md:hidden p-4">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+  </button>
+
+  <div class="flex">
+    <aside id="sidebar" class="fixed top-0 left-0 w-64 h-screen bg-white p-5 shadow-md transform -translate-x-full transition-transform md:relative md:translate-x-0 md:block md:w-100 z-50">
+      <h1 class="text-2xl font-bold text-blue-500 p-2">TrendBox</h1>
+      <nav class="mt-10">
+        <ul>
+          <li class="mb-10 p-2"><a href="/index.html">Dashboard</a></li>
+          <li class="mb-10 p-2"><a href="/addProduto.html">Adicionar Produto</a></li>
+          <li class="mb-10 p-2"><a href="/delProduto.html">Remover Produto</a></li>
+          <li class="mb-10 p-2"><a href="/produtos.html">Produtos</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    
+    <main class="flex-10 p-6  mt-15 md:mt-0">
+      <h2 class="text-xl font-bold mb-4">Lista de Produtos</h2>
+      <div class="overflow-x-auto">
+        <table class="min-w-full bg-white border border-gray-300 text-sm">
+          <thead>
+            <tr class="bg-gray-100">
+              <th class="px-4 py-3 border-b text-left font-medium">ID</th>
+              <th class="px-4 py-3 border-b text-left font-medium">Nome</th>
+              <th class="px-4 py-3 border-b text-left font-medium">Preço</th>
+              <th class="px-4 py-3 border-b text-left font-medium">Categoria</th>
+              <th class="px-4 py-3 border-b text-left font-medium">Descrição</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="px-4 py-3 border-b">1</td>
+              <td class="px-4 py-3 border-b">Smartphone Samsung Galaxy S23</td>
+              <td class="px-4 py-3 border-b">R$ 4.999,00</td>
+              <td class="px-4 py-3 border-b">Eletrônicos</td>
+              <td class="px-4 py-3 border-b">Smartphone de última geração com câmera avançada, tela AMOLED de alta resolução e bateria de longa duração.</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3 border-b">2</td>
+              <td class="px-4 py-3 border-b">Notebook Dell Inspiron</td>
+              <td class="px-4 py-3 border-b">R$ 3.500,00</td>
+              <td class="px-4 py-3 border-b">Eletrônicos</td>
+              <td class="px-4 py-3 border-b">Notebook ideal para trabalho e estudos, com processador rápido, tela Full HD e design leve e portátil.</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3 border-b">3</td>
+              <td class="px-4 py-3 border-b">Camiseta Nike Dry-Fit</td>
+              <td class="px-4 py-3 border-b">R$ 149,90</td>
+              <td class="px-4 py-3 border-b">Roupas</td>
+              <td class="px-4 py-3 border-b">Camiseta esportiva com tecnologia de secagem rápida, ideal para atividades físicas e conforto diário.</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3 border-b">4</td>
+              <td class="px-4 py-3 border-b">Relógio Apple Watch Series 8</td>
+              <td class="px-4 py-3 border-b">R$ 5.299,00</td>
+              <td class="px-4 py-3 border-b">Acessórios</td>
+              <td class="px-4 py-3 border-b">Relógio inteligente com monitoramento de saúde, resistência à água e integração com dispositivos Apple.</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3 border-b">5</td>
+              <td class="px-4 py-3 border-b">Boné Adidas Classic</td>
+              <td class="px-4 py-3 border-b">R$ 99,90</td>
+              <td class="px-4 py-3 border-b">Acessórios</td>
+              <td class="px-4 py-3 border-b">Boné casual com design clássico, ajuste confortável e material de alta qualidade.</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3 border-b">6</td>
+              <td class="px-4 py-3 border-b">Calça Jeans Levi's</td>
+              <td class="px-4 py-3 border-b">R$ 279,90</td>
+              <td class="px-4 py-3 border-b">Roupas</td>
+              <td class="px-4 py-3 border-b">Calça jeans de alta qualidade e conforto, com design moderno e durabilidade garantida.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+  
+  <script src="/script/menu.js"></script>
+</body>
+</html>

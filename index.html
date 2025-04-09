@@ -1,84 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <title>Dashboard</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <title>Dashboard</title>
 </head>
-<body class="h-screen bg-gray-100">
-    <div class="flex">
-        <aside class="w-64 bg-white p-5 shadow-md h-screen">
-            <h1 class="text-2xl font-bold text-blue-500 p-2">TrendBox</h1>
-            <nav class="mt-10">
-                <ul>
-                    <li class="mb-10 p-2"><a href="/index.html">Dashboard</a></li>
-                    <li class="mb-10 p-2"><a href="/addProduto.html">Adicionar Produto</a></li>
-                    <li class="mb-10 p-2"><a href="/delProduto.html">Remover Produto</a></li>
-                    <li class="mb-10 p-2"><a href="/produtos.html">Produtos</a></li>
-                </ul>
-            </nav>
-        </aside>
+<body class="bg-gray-100">
 
-        <main class="flex-1 p-5">
-            <h1 class="text-2xl font-bold">Dashboard</h1>
-            <div class="grid grid-cols-3 gap-4 mt-5">
-                <div class="bg-white p-5 shadow-md rounded-lg">
-                    <h3 class="text-lg font-bold">Total de Vendas</h3>
-                    <p class="text-2xl font-semibold">25,024</p>
-                </div>
-                <div class="bg-white p-5 shadow-md rounded-lg">
-                    <h3 class="text-lg font-bold">Total de Despesas</h3>
-                    <p class="text-2xl font-semibold">14,024</p>
-                </div>
-                <div class="bg-white p-5 shadow-md rounded-lg">
-                    <h3 class="text-lg font-bold">Total de Custos</h3>
-                    <p class="text-2xl font-semibold">25,024</p>
-                </div>
-            </div>
+  <button id="menuButton" class="md:hidden p-4">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+  </button>
 
-            <div class="bg-white p-5 shadow-md rounded-lg mt-5">
-                <h3 class="text-lg font-bold">Gráfico de Vendas, Despesas e Custos</h3>
-                <canvas id="myChart" width="85" height="20"></canvas>
+  <div class="flex">
+    <aside id="sidebar" class="fixed top-0 left-0 w-64 h-screen bg-white p-5 shadow-md transform -translate-x-full transition-transform md:relative md:translate-x-0 md:block md:w-100 z-50">
+      <h1 class="text-2xl font-bold text-blue-500 p-2">TrendBox</h1>
+      <nav class="mt-10">
+        <ul>
+          <li class="mb-10 p-2"><a href="/index.html">Dashboard</a></li>
+          <li class="mb-10 p-2"><a href="/addProduto.html">Adicionar Produto</a></li>
+          <li class="mb-10 p-2"><a href="/delProduto.html">Remover Produto</a></li>
+          <li class="mb-10 p-2"><a href="/produtos.html">Produtos</a></li>
+        </ul>
+      </nav>
+    </aside>
 
+  
+    <main class="flex-1 p-6 w-full mt-10 md:mt-0">
+      <h1 class="text-2xl font-bold">Dashboard</h1>
 
-            </div>
-
-            <table class="w-full bg-white shadow-md rounded-lg mt-3">
-                <thead>
-                    <tr class="border-b">
-                        <th class="p-3 text-left">Nome do Produto</th>
-                        <th class="p-3 text-left">Número do Produto</th>
-                        <th class="p-3 text-left">Pagamento</th>
-                        <th class="p-3 text-left">Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="border-b">
-                        <td class="p-3">Mini Drone</td>
-                        <td class="p-3">123</td>
-                        <td class="p-3">Cartão de Crédito</td>
-                        <td class="p-3 text-yellow-500">Pendente</td>
-                    </tr>
-                    <tr class="border-b">
-                        <td class="p-3">Celular</td>
-                        <td class="p-3">124</td>
-                        <td class="p-3">Boleto</td>
-                        <td class="p-3 text-yellow-500">Pendente</td>
-                    </tr>
-                    <tr>
-                        <td class="p-3">Carregador</td>
-                        <td class="p-3">125</td>
-                        <td class="p-3">Cartão de Crédito</td>
-                        <td class="p-3 text-yellow-500">Pendente</td>
-                    </tr>
-                </tbody>
-            </table>
-        </main>
-    </div>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-5">
+        <div class="bg-white p-5 shadow-md rounded-lg">
+          <h3 class="text-lg font-bold">Total de Vendas</h3>
+          <p class="text-2xl font-semibold">25,024</p>
+        </div>
+        <div class="bg-white p-5 shadow-md rounded-lg">
+          <h3 class="text-lg font-bold">Total de Despesas</h3>
+          <p class="text-2xl font-semibold">14,024</p>
+        </div>
+        <div class="bg-white p-5 shadow-md rounded-lg">
+          <h3 class="text-lg font-bold">Total de Custos</h3>
+          <p class="text-2xl font-semibold">25,024</p>
+        </div>
+      </div>
 
 
-    <script src="/script/conf.js"></script>
+      <div class="bg-white p-1 shadow-md rounded-lg mt-5 overflow-x-auto">
+        <h3 class="text-lg font-bold mb-3">Gráfico de Vendas, Despesas e Custos</h3>
+        <canvas id="myChart" class="w-5 h-5"></canvas>
+      </div>
+
+      
+      <div class="overflow-x-auto mt-3">
+        <table class="min-w-full bg-white shadow-md rounded-lg">
+          <thead>
+            <tr class="border-b">
+              <th class="p-3 text-left">Nome do Produto</th>
+              <th class="p-3 text-left">Número do Produto</th>
+              <th class="p-3 text-left">Pagamento</th>
+              <th class="p-3 text-left">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b">
+              <td class="p-3">Mini Drone</td>
+              <td class="p-3">123</td>
+              <td class="p-3">Cartão de Crédito</td>
+              <td class="p-3 text-yellow-500">Pendente</td>
+            </tr>
+            <tr class="border-b">
+              <td class="p-3">Celular</td>
+              <td class="p-3">124</td>
+              <td class="p-3">Boleto</td>
+              <td class="p-3 text-yellow-500">Pendente</td>
+            </tr>
+            <tr>
+              <td class="p-3">Carregador</td>
+              <td class="p-3">125</td>
+              <td class="p-3">Cartão de Crédito</td>
+              <td class="p-3 text-yellow-500">Pendente</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+  <script src="/script/conf.js"></script>
+  <script src="/script/menu.js"></script>
 </body>
 </html>
