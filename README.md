@@ -1,4 +1,4 @@
-# Documentação Projeto TailWind
+# Documentação Projeto TailWind 🔔
 
 Nosso objetivo é criar um painel de administração, usando o Tailwind CSS, que seja fácil de utilizar e visualmente atrativo. O painel deve aderir às melhores práticas de UI e UX Design, proporcionando uma experiência interativa e acessível.
 
@@ -32,7 +32,7 @@ Lista de produtos (responsivo para celular)
 
 ![image.png](https://github.com/DEV310107/projeto-Tailwind/blob/main/img/image%207.png?raw=true)
 
-# Código
+# Código 💬
 
 O código foi estruturado da seguinte forma usamos 4 arquivos index, e 2 JS, cada arquivo index fazia respectivamente cada função do protótipo como adicionar, deletar e a lista de produtos.
 
@@ -40,7 +40,7 @@ Já o conf.js foi utilizado para configurar o gráfico de produtos, o main.js fo
 
 ![image.png](https://github.com/DEV310107/projeto-Tailwind/blob/main/img/image%208.png?raw=true)
 
-### INDEX:
+###🚪 INDEX: 
 
 ```html
 <!DOCTYPE html> <!-- Declara o tipo do documento como HTML5 -->
@@ -167,7 +167,7 @@ Por fim, dois scripts são carregados no final:
 
 Ou seja, essa página serve como **painel gerencial** para uma loja ou sistema de controle de produtos, facilitando a visualização de dados financeiros e status de pedidos, com uma interface moderna e responsiva.
 
-### ADDPRODUTO:
+###📩 ADDPRODUTO:
 
 ```html
 <!DOCTYPE html> <!-- Declara o tipo do documento como HTML5 -->
@@ -253,7 +253,7 @@ Por fim, o código carrega um script chamado `menu.js`, que provavelmente cuida 
 
 No geral, essa página é feita pra facilitar o trabalho de quem tá gerenciando os produtos da loja, deixando tudo bem simples, claro e bonito de usar.
 
-### DELPRODUTO:
+###📦 DELPRODUTO:
 
 ```html
 <!DOCTYPE html> <!-- Define o tipo de documento como HTML5 -->
@@ -334,7 +334,7 @@ O layout é limpo e direto ao ponto, o que ajuda a evitar erro na hora de preenc
 
 Além disso, o botão de menu no topo garante que a navegação continue fluida mesmo no celular, então dá pra usar essa funcionalidade de qualquer lugar. O sistema foi pensado pra ser ágil, leve e prático no dia a dia de quem gerencia os produtos.
 
-### PRODUTO:
+###☄️ PRODUTO:
 
 ```html
 <!DOCTYPE html> <!-- Declaração do tipo de documento como HTML5 -->
