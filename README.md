@@ -6,31 +6,31 @@ Para começarmos fazendo o nosso projeto, iniciamos o protótipo de baixa fideli
 
 Link do Figma: https://www.figma.com/design/HOctb6xHDzgUBF9kMripGY/Projeto?node-id=0-1&p=f&t=N7avuvU2TZlEmuqm-0
 
-![image.png](attachment:ca9a8a0c-4ff8-44ff-8b46-5939018f417c:image.png)
+![image.png](https://github.com/DEV310107/projeto-Tailwind/blob/main/img/image%201.png?raw=true)
 
 Tela para adicionar o produto:
 
-![image.png](attachment:cc03ed37-4328-49cb-b46d-df50ab6e5d7c:image.png)
+![image.png](https://github.com/DEV310107/projeto-Tailwind/blob/main/img/image%202.png?raw=true)
 
 Remover produto:
 
-![image.png](attachment:e4ec79e0-553a-4158-a96a-9a302fb477d5:image.png)
+![image.png](https://github.com/DEV310107/projeto-Tailwind/blob/main/img/image%203.png?raw=true)
 
 Lista de produtos:
 
-![image.png](attachment:7a8873f6-3d3b-4ed5-89f3-ded5d78a4759:image.png)
+![image.png](https://github.com/DEV310107/projeto-Tailwind/blob/main/img/image%204.png?raw=true)
 
 Adicionar produto (responsivo para celular)
 
-![image.png](attachment:a0733a99-9dcf-4ac1-97d5-b588f45851e3:image.png)
+![image.png](https://github.com/DEV310107/projeto-Tailwind/blob/main/img/image%205.png?raw=true)
 
 Remover produto (responsivo para celular)
 
-![image.png](attachment:c98aa43a-1783-4894-b358-0cab77c1b566:image.png)
+![image.png](https://github.com/DEV310107/projeto-Tailwind/blob/main/img/image%206.png?raw=true)
 
 Lista de produtos (responsivo para celular)
 
-![image.png](attachment:293bdb56-771e-4ea7-8876-2720adac6594:image.png)
+![image.png](https://github.com/DEV310107/projeto-Tailwind/blob/main/img/image%207.png?raw=true)
 
 # Código
 
@@ -38,7 +38,7 @@ O código foi estruturado da seguinte forma usamos 4 arquivos index, e 2 JS, cad
 
 Já o conf.js foi utilizado para configurar o gráfico de produtos, o main.js foi utilizado para configurar o menu responsivo.
 
-![image.png](attachment:51f8c374-298e-4143-9f64-40f59003e015:image.png)
+![image.png](https://github.com/DEV310107/projeto-Tailwind/blob/main/img/image%208.png?raw=true)
 
 ### INDEX:
 
